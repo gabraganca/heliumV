@@ -1,4 +1,4 @@
-MEAN_VSHE
+MEANVSHE
 =========
 
 This software calculates the projected rotational velocity (*vsini*) of a OB
@@ -14,7 +14,7 @@ Programmatically, the main part you will want to use is the `MeanVshe` object
 that can be imported using:
 
 ```
-from mean_vshe import MeanVshe
+from meanvshe import MeanVshe
 ```
 
 To calculate the *vsini* we should use:
