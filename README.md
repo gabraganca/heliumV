@@ -1,6 +1,9 @@
 heliumV
 =========
 
+[![Build Status](http://img.shields.io/travis/gabraganca/heliumv.svg)](https://travis-ci.org/gabraganca/heliumv)
+
+
 This software calculates the projected rotational velocity (*vsini*) of a OB
 star using the Full Width at Half Maximum (FWHM) of He I lines at 4026, 4388
 and 4471 Angstroms. It is based on the work of [Daflon et al. (2007)][1].
