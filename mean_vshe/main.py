@@ -8,6 +8,8 @@ TEFF_VALUES = range(15000, 30001, 5000)
 
 
 class MeanVshe():
+    """Obtain vsini from Teff and FWHM of a He I line.
+    """
 
     def __init__(self, grid_res):
 
