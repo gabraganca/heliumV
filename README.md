@@ -1,4 +1,4 @@
-meanVsHe
+heliumV
 =========
 
 This software calculates the projected rotational velocity (*vsini*) of a OB
@@ -14,13 +14,13 @@ Programmatically, the main part you will want to use is the `MeanVshe` object
 that can be imported using:
 
 ```
-from meanvshe import MeanVshe
+from heliumv import HeV
 ```
 
 To calculate the *vsini* we should use:
 
 ```
-MeanVshe(10).get_vsni(17000, 4026, 3)
+HeV(10).get_vsni(17000, 4026, 3)
 ```
 
 For the case where we had hypothetically calculated a FHWM of 3 angstroms to
@@ -33,7 +33,7 @@ will not load the grid multiple times.
 
 ```
 # Load the class and the grid
-grid = MeanVshe(10)
+grid = HeV(10)
 
 # Calculate vsini
 vsini1 = grid(17000, 4026, 3)

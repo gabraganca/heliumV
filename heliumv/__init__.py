@@ -9,4 +9,4 @@ and 4471 Angstroms. It is absed on the work of [Daflon et al. (2007)][1].
 [1]: http://dx.doi.org/10.1086/521707
 
 """
-from .main import MeanVshe
+from .main import HeV

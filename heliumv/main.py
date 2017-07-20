@@ -7,7 +7,7 @@ from scipy.interpolate import RectBivariateSpline, interp1d
 TEFF_VALUES = range(15000, 30001, 5000)
 
 
-class MeanVshe():
+class HeV():
     """Obtain vsini from Teff and FWHM of a He I line.
     """
 
