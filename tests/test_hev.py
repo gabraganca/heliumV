@@ -6,6 +6,11 @@ import pandas as pd
 from heliumv import HeV
 
 def test_HeV():
+    """Test HeV class initialization.
+
+    It also test the `_load_grid' function scine it is initalizd together with
+    the function.
+    """
 
     df_type = type(pd.DataFrame())
 
@@ -17,12 +22,12 @@ def test_HeV():
 
 
     try:
-        grid_null = HeV()
+        _ = HeV()
     except TypeError:
         pass
 
     try:
-        grid_wrong = HeV(40)
+        _ = HeV(40)
     except RuntimeError:
         pass
 
