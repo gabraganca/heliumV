@@ -1,3 +1,4 @@
+import os
 from io import StringIO
 import numpy as np
 import pandas as pd
@@ -35,7 +36,9 @@ class MeanVshe():
         resolution: int,str:
             The resolution of the grid. It can be 10 or 50.
         """
-        with open('grid{}K.dat'.format(self.grid_res)) as grid:
+        this_dir, _ = os.path.split(__file__)
+
+        with open(this_dir +'/grids/grid{}K.dat'.format(self.grid_res)) as grid:
             grids = grid.read().split('\n\n')
 
         read_grid = lambda grid: pd.read_csv(StringIO(grid),
