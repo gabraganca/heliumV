@@ -7,11 +7,6 @@ from scipy.interpolate import RectBivariateSpline, interp1d
 TEFF_VALUES = range(15000, 30001, 5000)
 
 
-class test():
-
-    def __init_(self, t):
-        self.t = t
-
 class MeanVshe():
 
     def __init__(self, grid_res):
