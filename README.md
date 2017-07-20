@@ -1,4 +1,4 @@
-MEANVSHE
+meanVsHe
 =========
 
 This software calculates the projected rotational velocity (*vsini*) of a OB
