@@ -31,6 +31,13 @@ def test_HeV():
     except RuntimeError:
         pass
 
+def test_fwhm_outside_grid():
+    """
+    Test if nan returned if FHWM is outside the grid
+    """
+
+    assert HeV(10).get_vsini(15000, 4026, 0) is np.nan
+
 def test_vsini_4026_10k():
     """
     Check if vsini values of the HeI@4026 on the 10k grid
