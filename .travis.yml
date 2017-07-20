@@ -1,0 +1,22 @@
+language: python
+python:
+  - "3.6"
+before_install:
+  # Install python packages through miniconda
+  - wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - export PATH="$HOME/miniconda/bin:$PATH"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update -q conda
+  - conda install pip python=$TRAVIS_PYTHON_VERSION numpy scipy pandas nose
+  - pip install -q coverage coveralls
+install:
+  - python setup.py build
+  - pip install . 
+script:
+  - nosetests heliumv tests -v --with-doctest --with-coverage --cover-package=heliumv
+after_success:
+  - coveralls
+notifications:
+  email: false   
