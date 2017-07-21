@@ -1,7 +1,6 @@
 heliumV
 =========
-
-[![Build Status](http://img.shields.io/travis/gabraganca/heliumv.svg)](https://travis-ci.org/gabraganca/heliumV)
+[![Build Status](https://travis-ci.org/gabraganca/heliumV.svg?branch=master)](https://travis-ci.org/gabraganca/heliumV)
 [![Coverage Status](https://coveralls.io/repos/github/gabraganca/heliumV/badge.svg?branch=master)](https://coveralls.io/github/gabraganca/heliumV?branch=master)
 
 This software calculates the projected rotational velocity (*vsini*) of a OB
